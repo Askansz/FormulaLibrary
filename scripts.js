@@ -880,7 +880,7 @@ function showCalculator(formulaId) {
                     } else if (formula.unitType === 'volume') {
                         // For volume measurements
                         adjustedResult = result / (prefixFactor * prefixFactor * prefixFactor);
-                        displayUnitName = `cubic ${unitName}s`; // e.g., "cubic centimeters"
+                        displayUnitName = `${unitName}s`; // e.g., "cubic centimeters"
                         displayUnitSymbol = `${unitSymbol}³`; // e.g., "cm³"
                     } else {
                         // For linear measurements and others
