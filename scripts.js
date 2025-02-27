@@ -511,11 +511,11 @@ const unitPrefixes = {
 
 // Map of unit types to determine which prefixes to offer
 const unitTypes = {
-    'length': ['meter', 'm'],
-    'area': ['meter', 'm²'],
-    'volume': ['meter', 'm³'],
-    'mass': ['gram', 'g'],
-    'time': ['second', 's'],
+    'length': ['m', 'm'],
+    'area': ['m', 'm²'],
+    'volume': ['m', 'm³'],
+    'mass': ['g', 'g'],
+    'time': ['s', 's'],
     'force': ['newton', 'N'],
     'energy': ['joule', 'J'],
     'power': ['watt', 'W'],
