@@ -875,17 +875,17 @@ function showCalculator(formulaId) {
                     if (formula.unitType === 'area') {
                         // For area measurements
                         adjustedResult = result / (prefixFactor * prefixFactor);
-                        displayUnitName = `${unitName}²`; // e.g., "square centimeters"
+                        displayUnitName = `${unitSymbol}²`; // e.g., "square centimeters"
                         displayUnitSymbol = `${unitSymbol}²`; // e.g., "cm²"
                     } else if (formula.unitType === 'volume') {
                         // For volume measurements
                         adjustedResult = result / (prefixFactor * prefixFactor * prefixFactor);
-                        displayUnitName = `${unitName}³`; // e.g., "cubic centimeters"
+                        displayUnitName = `${unitSymbol}³`; // e.g., "cubic centimeters"
                         displayUnitSymbol = `${unitSymbol}³`; // e.g., "cm³"
                     } else {
                         // For linear measurements and others
                         adjustedResult = result / prefixFactor;
-                        displayUnitName = `${unitName}s`; // e.g., "centimeters"
+                        displayUnitName = `${unitSymbol}s`; // e.g., "centimeters"
                         displayUnitSymbol = unitSymbol; // e.g., "cm"
                     }
                     
