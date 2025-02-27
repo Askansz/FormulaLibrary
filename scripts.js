@@ -512,8 +512,8 @@ const unitPrefixes = {
 // Map of unit types to determine which prefixes to offer
 const unitTypes = {
     'length': ['meter', 'm'],
-    'area': ['square meter', 'm²'],
-    'volume': ['cubic meter', 'm³'],
+    'area': ['meter', 'm²'],
+    'volume': ['meter', 'm³'],
     'mass': ['gram', 'g'],
     'time': ['second', 's'],
     'force': ['newton', 'N'],
