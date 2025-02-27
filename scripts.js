@@ -91,6 +91,22 @@ const formulas = [
         unitType: "length"
     },
     {
+        id: "cuboid-volume",
+        name: "Cuboid Volume",
+        category: "geometry",
+        subcategory: "volume",
+        formula: "V = l × w × h",
+        description: "The volume of a cuboid (rectangular prism) is equal to the product of its length, width, and height. For a cube, all sides are equal.",
+        variables: [
+        { name: "l", label: "Length", unit: "units" },
+        { name: "w", label: "Width", unit: "units" },
+        { name: "h", label: "Height", unit: "units" }
+        ],
+        calculate: (values) => values.l * values.w * values.h,
+        formatResult: (result) => `${result.toFixed(2)} cubic units`,
+        unitType: "volume"
+    },
+    {
         id: "sphere-volume",
         name: "Sphere Volume",
         category: "geometry",
